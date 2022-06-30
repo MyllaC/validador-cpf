@@ -5,11 +5,12 @@ function primeiroDigitoVerificador(cpf) {
   }
 
   let restoDivisao = sum % 11
-  if (restoDivisao == 0 || restoDivisao == 1) {
-    return (primeitoDV = 0)
-  } else {
-    return (primeitoDV = 11 - (sum % 11))
-  }
+  let primeiroDigito =
+    restoDivisao == 0 || restoDivisao == 1 ? 0 : 11 - restoDivisao
+
+  return primeiroDigito
 }
+
+// let primeiroDigito = restoDivisao == 0 || restoDivisao == 1 ? 0 : 11 - restoDivisao
 
 module.exports = primeiroDigitoVerificador

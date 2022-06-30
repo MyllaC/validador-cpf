@@ -31,6 +31,6 @@ app.get('/validar-cpf/:cpf', (req, res) => {
   if (verifyCpf(cpf)) {
     res.send(`CPF válido! ${regiaoFiscal(cpf)}`)
   } else {
-    res.send('CPF invalido!')
+    res.send('CPF inválido!')
   }
 })

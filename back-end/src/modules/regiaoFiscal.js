@@ -5,23 +5,23 @@ function regiaoFiscal(input) {
   if (digitoVerificador == 1) {
     return 'O documento foi emitido na Regiaão Fiscal DF, GO, MS, MT, TO'
   } else if (digitoVerificador == 2) {
-    return 'O documento foi emitido na Regiaão Fiscal AC, AM, AP, PA, RO, RR'
+    return 'O documento foi emitido na Região Fiscal AC, AM, AP, PA, RO, RR'
   } else if (digitoVerificador == 3) {
-    return 'O documento foi emitido na Regiaão Fiscal CE, MA, PI'
+    return 'O documento foi emitido na Região Fiscal CE, MA, PI'
   } else if (digitoVerificador == 4) {
-    return 'O documento foi emitido na Regiaão Fiscal AL, PB, PE, RN'
+    return 'O documento foi emitido na Região Fiscal AL, PB, PE, RN'
   } else if (digitoVerificador == 5) {
-    return 'O documento foi emitido na Regiaão Fiscal BA e SE'
+    return 'O documento foi emitido na Região Fiscal BA e SE'
   } else if (digitoVerificador == 6) {
-    return 'O documento foi emitido na Regiaão Fiscal MG'
+    return 'O documento foi emitido na Região Fiscal MG'
   } else if (digitoVerificador == 7) {
-    return 'O documento foi emitido na Regiaão Fiscal ES e RJ'
+    return 'O documento foi emitido na Região Fiscal ES e RJ'
   } else if (digitoVerificador == 8) {
-    return 'O documento foi emitido na Regiaão Fiscal SP'
+    return 'O documento foi emitido na Região Fiscal SP'
   } else if (digitoVerificador == 9) {
-    return 'O documento foi emitido na Regiaão Fiscal PR e SC'
+    return 'O documento foi emitido na Região Fiscal PR e SC'
   } else if (digitoVerificador == 0) {
-    return 'O documento foi emitido na Regiaão Fiscal RS'
+    return 'O documento foi emitido na Região Fiscal RS'
   }
 }
 
