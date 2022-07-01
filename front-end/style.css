@@ -13,7 +13,7 @@ form {
 }
 
 body {
-  background-color: #aeaeae;
+  background-color: #051e28;
   width: 100vw;
   height: 100vh;
   margin: auto;
@@ -22,12 +22,12 @@ body {
 .form-container {
   min-width: 30vw;
   min-height: 65vh;
-  background: #f6f6f6;
+  background: #1f768a;
 
   border: none;
   border-radius: 10px;
-  color: #f6f6f6;
-  box-shadow: 0 0 0.5em #f6f6f6;
+
+  box-shadow: 0 0 0.5em #1f768a;
 
   display: flex;
   flex-direction: column;
@@ -39,8 +39,8 @@ body {
 .form-container header {
   width: 100%;
 
-  background-color: #8589e4;
-  color: #f6f6f6;
+  background-color: #58a4b4;
+  color: #0d1e28;
 
   border: none;
   border-radius: 2px;
@@ -58,33 +58,39 @@ form {
 }
 
 form input {
-  height: 30px;
+  height: 40px;
   width: 70%;
 
   background: none;
-  color: #aeaeae;
 
-  border: 1px solid #aeaeae;
+  border: 2px solid #8bd3e1;
   border-radius: 5px;
 
   text-align: center;
 }
 
+::placeholder {
+  color: #0d1e28;
+  opacity: 1;
+}
+
 button {
-  height: 30px;
+  height: 40px;
   padding: 0 2rem;
   border: none;
   border-radius: 5px;
 
-  background: #8589e4;
-  color: #f6f6f6;
+  background: #051e28;
+  color: #8bd3e1;
+  opacity: 0.9;
   font-weight: bold;
 
   transition: all 0.2 ease;
   cursor: pointer;
+
+  text-transform: uppercase;
 }
 
 button:hover {
-  background-color: #aeaeae;
-  color: #f6f6f6;
+  opacity: 1;
 }
