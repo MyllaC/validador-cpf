@@ -19,13 +19,15 @@ function validateCpf() {
       .catch(err => console.error(err))
 
     displayCpf(data)
+  } else {
+    invalidCpf()
   }
 }
 
 function displayCpf(data) {
   const responseBox = document.querySelector('#res-box')
   responseBox.classList.add('show-response')
-  
+
   const cpf = document.querySelector('#input-cpf')
   const status = document.querySelector('#input-status')
   const region = document.querySelector('#input-region')
@@ -38,4 +40,9 @@ function displayCpf(data) {
     const regionBox = document.querySelector('#region-box')
     regionBox.classList.add('show-region')
   }
+}
+
+function invalidCpf() {
+  const cpfInvalid = document.querySelector('#invalid-cpf-box')
+  cpfInvalid.classList.add('invalid-cpf')
 }
