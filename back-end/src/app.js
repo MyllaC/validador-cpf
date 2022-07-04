@@ -26,11 +26,16 @@ function verifyCpf(input) {
 }
 
 app.get('/validar-cpf/:cpf', (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*')
   const cpf = req.params.cpf
 
   if (verifyCpf(cpf)) {
-    res.send(`CPF válido! ${regiaoFiscal(cpf)}`)
+    res.json({
+      cpf: cpf,
+      unidadeFederativa: regiaoFiscal(cpf),
+      status: 'válido'
+    })
   } else {
-    res.send('CPF inválido!')
+    res.json({ cpf: cpf, status: 'inválido' })
   }
 })

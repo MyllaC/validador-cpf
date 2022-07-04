@@ -20,8 +20,8 @@ body {
 }
 
 .form-container {
-  min-width: 30vw;
-  min-height: 65vh;
+  width: 400px;
+  height: 65vh;
   background: #1f768a;
 
   border: none;
@@ -93,4 +93,32 @@ button {
 
 button:hover {
   opacity: 1;
+}
+
+/* RESPONSE BOX */
+
+#res-box {
+  opacity: 0;
+}
+
+#res-box.show-response {
+  opacity: 1;
+
+  padding: 0 2rem;
+  text-align: center;
+}
+
+#region-box {
+  opacity: 0;
+}
+
+#region-box.show-region {
+  opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .form-container {
+    width: 80vw;
+    height: 65vh;
+  }
 }
