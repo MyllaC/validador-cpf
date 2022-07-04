@@ -104,7 +104,7 @@ button:hover {
 #res-box.show-response {
   opacity: 1;
 
-  padding: 0;
+  padding: 0 2rem;
   text-align: center;
 }
 
@@ -117,15 +117,15 @@ button:hover {
 }
 
 #invalid-cpf-box {
-  opacity: 0;
+  display: none;
 }
 
 #invalid-cpf-box.invalid-cpf {
-  opacity: 1;
+  display: flex;
+  justify-content: center;
   color: red;
 
   padding: 0 1rem;
-  text-align: center;
 }
 
 @media (max-width: 400px) {
