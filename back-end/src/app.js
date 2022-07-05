@@ -1,13 +1,13 @@
 const express = require('express')
 const app = express()
-const port = 80
+const port = process.env.PORT || 3000
 
 const primeiroDigitoVerificador = require('./modules/primeiroDigitoVerificador')
 const segundoDigitoVerificador = require('./modules/segundoDigitoVerificador')
 const regiaoFiscal = require('./modules/regiaoFiscal')
 
 app.listen(port, () => {
-  console.log(`Servidor escutando na porta ${port}`)
+  console.info('Aplicação rodando em http://localhost:3000')
 })
 
 function verifyCpf(input) {

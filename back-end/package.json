@@ -5,7 +5,8 @@
   "author": "Camila",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "dependencies": {
     "express": "^4.18.1"

@@ -18,7 +18,7 @@ submitButton.addEventListener('click', e => {
 function validateCpf() {
   const cpf = inputCPF.value
 
-  const URL = `http://localhost:80/validar-cpf/${cpf}`
+  const URL = `http://localhost:3000/validar-cpf/${cpf}`
 
   if (cpf.length === 11) {
     fetch(URL)
